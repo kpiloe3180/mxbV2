@@ -66,6 +66,6 @@
 
   </scroll-view>
   <view class="shBtnBox">
-    <button bindtap='goGRZX'>个人中心</button>
+    <button bindtap='goGRZX'> 个人中心 </button>
   </view>
 </view>
