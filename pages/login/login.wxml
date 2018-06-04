@@ -1,0 +1,21 @@
+<view class="f-body" style='padding-top: 70rpx'>
+  <view class='lo-verifTitleBox'>
+    <image src='/assets/img/hxcg.png' mode='widthFix'></image>
+  </view>
+  <view class='lo-verifTitleBoxB'>
+    <image src='/assets/img/mxbText.png' mode='widthFix'></image>
+  </view>
+  <form class='f-row' bindsubmit='fSubmit'>
+    <view class='loInputBox'>
+      <image src='/assets/img/userName.png' mode='widthFix' class='loIconSt'></image>
+      <input type="number" maxlength="11" placeholder='请输入您的用户名' placeholder-style="color: #d5d5d5;" class='loInput' name="username"></input>
+    </view>
+    <view class='loInputBox'>
+      <image src='/assets/img/password.png' mode='widthFix' class='loIconSt'></image>
+      <input placeholder='请输入您的密码' password="true" placeholder-style="color: #d5d5d5;" class='loInput' name="password"></input>
+    </view>
+    <button class='{{isSumbit?"loginBtnC":"loginBtnN"}}' disabled='{{!isSumbit}}' form-type="submit" style='border: none;'>确认登录</button>
+  </form>
+
+  <!-- <view class='footBtnSt'>找回密码</view> -->
+</view>

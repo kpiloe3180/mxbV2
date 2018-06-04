@@ -1,0 +1,113 @@
+.userInfoBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2rpx solid #f2f2f2;
+  position: relative;
+  height: 120rpx;
+}
+
+.userIconBox, .userDetailRow, .userPhoneBox {
+  height: 100%;
+}
+
+.userIconBox {
+  flex: 1.2;
+  line-height: 120rpx;
+}
+
+.userIcon {
+  width: 100%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.userDetailRow {
+  flex: 4;
+  text-indent: 22rpx;
+}
+
+.userDetailName {
+  line-height: 70rpx;
+  font-size: 34rpx;
+  color: #666;
+}
+
+.userDetailSt {
+  line-height: 20rpx;
+  font-size: 30rpx;
+}
+
+.uColRed {
+  color: #ff7047;
+}
+
+.uColGray {
+  color: #888;
+}
+
+.userHXTimeBox {
+  flex: 5;
+  line-height: 120rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #666;
+}
+
+.usBotBox {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 144rpx;
+  border-top: 2rpx solid #f2f2f2;
+  z-index: 7;
+  background-color: white;
+}
+
+.usAlertRow {
+  width: 100%;
+  height: 56rpx;
+  line-height: 56rpx;
+  position: relative;
+  color: #888;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.usALertIcon {
+  display: inline-block;
+  width: 26rpx;
+  vertical-align: middle;
+}
+
+.usBtnBox, .usBtnBoxB {
+  width: 80%;
+  margin-left: 10%;
+  height: 76rpx;
+  line-height: 76rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: white;
+  position: relative;
+  border-radius: 38rpx;
+}
+
+.usBtnBox {
+  background-color: #1879ff;
+}
+
+.usBtnBoxB {
+  background-color: #535353;
+}
+
+.usBtnIcon {
+  display: inline-block;
+  width: 42rpx;
+  vertical-align: middle;
+}
+
+.usBtnBoxB {
+}

@@ -1,0 +1,71 @@
+<view class='f-body' style='padding-top:100rpx;padding-bottom: 140rpx;'>
+  <view class="f-topFixBox">
+    <view class='f-topNav f-wh'>
+      <view class='f-topLeftNav {{isDoneA?"topNotDone":"topIsDone"}}' bindtap='notDoneClick'>未完成</view>
+      <view class='f-topRightNav {{isDoneA?"topIsDone":"topNotDone"}}' bindtap='isDoneClick'>已完成</view>
+    </view>
+  </view>
+
+  <view class="dataNullBox" wx:if='{{isleftDataNull&&!isDoneA}}'>
+    <image src='/assets/img/dataNull.png' mode='widthFix'></image>
+    暂无排班
+  </view>
+  <view class="dataNullBox" wx:if='{{isrightDataNull&&isDoneA}}'>
+    <image src='/assets/img/dataNull.png' mode='widthFix'></image>
+    暂无已完成的排班
+  </view>
+  <scroll-view scroll-y="true">
+
+    <view class='f-row' wx:if="{{!isDoneA}}" style='padding: 20rpx 0;'>
+
+      <view class='sheetDetailBox' wx:for="{{nowList}}">
+        <view class='f-row' data-schedulId='{{item.schedule_id}}' data-deate='{{item.riding_num}}' data-deime='{{item.order_count}}' data-departSt='{{item.depart_status}}' bindtap='goAway'>
+          <view class="sheetTopRow">
+            <text style='color: #1879ff'>{{item.depart_status==0?'未完成':'正在进行'}}</text>
+            <text style='margin-left: 30rpx'>{{item.depart_date}}</text>
+            <text style='margin-left: 30rpx'>{{item.depart_time}}</text>
+          </view>
+          <view class="sheetAddressBox">
+            <view class='shStartStation'>
+              <text class='redPoint'></text>{{item.start_station}}
+            </view>
+            <view class='shEndStation'>
+              <text class='bluePoint'></text>{{item.end_station}}
+            </view>
+          </view>
+        </view>
+        <view class='sheetRightBox' data-schedulId='{{item.schedule_id}}' data-departSt='{{item.depart_status}}' bindtap='goUserList'>
+          <image src='/assets/img/GX.png' mode="widthFix" class="sheetRightIcon"></image>
+          <text style='color: #1879ff'>{{item.riding_num}}/{{item.order_count}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='sheetDetailBox' wx:for="{{isDoneA?hasList:notList}}">
+      <view class='f-row' data-schedulId='{{item.schedule_id}}' data-departSt='{{item.depart_status}}'>
+        <view class="sheetTopRow">
+          <text>{{isDoneA?'已完成':'未完成'}}</text>
+          <text style='margin-left: 30rpx'>{{item.depart_date}}</text>
+          <text style='margin-left: 30rpx'>{{item.depart_time}}</text>
+        </view>
+        <view class="sheetAddressBox">
+          <view class='shStartStation'>
+            <text class='redPoint'></text>{{item.start_station}}
+          </view>
+          <view class='shEndStation'>
+            <text class='bluePoint'></text>{{item.end_station}}
+          </view>
+        </view>
+      </view>
+
+      <view class='sheetRightBox' data-schedulId='{{item.schedule_id}}' data-departSt='{{item.depart_status}}'>
+        <image src='/assets/img/sjdGX.png' mode="widthFix" class="sheetRightIcon"></image>
+        <text>{{item.riding_num}}/{{item.order_count}}</text>
+      </view>
+    </view>
+
+  </scroll-view>
+  <view class="shBtnBox">
+    <button bindtap='goGRZX'>个人中心</button>
+  </view>
+</view>

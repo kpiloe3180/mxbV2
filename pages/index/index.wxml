@@ -1,0 +1,65 @@
+<view class='map_container'>
+  <map id="map" class="map" longitude="{{flongitude}}" latitude="{{flatitude}}" scale="13"  markers="{{markers}}" polyline="{{polyline}}" show-location style="width: 100%; height: 100vh;">
+
+    <cover-view class="in-topBox">
+      <cover-view class='f-row f-wh'>
+        <cover-view class="adTopRow">
+          <cover-view class="adDetailBox">{{startObj.fName}}</cover-view>
+          <cover-view class="adMidBox" style='padding-top:10rpx;'>
+            <cover-view>约{{pastTime}}分钟</cover-view>
+            <cover-view class='inArrowIcon'>
+              <cover-image src='/assets/img/ssjgjt.png' mode='widthFix'></cover-image>
+            </cover-view>
+
+          </cover-view>
+          <cover-view class="adDetailBox">{{endObj.fName}}</cover-view>
+        </cover-view>
+
+        <cover-view class="adBTopRow">
+          <cover-view class="adBDetailBox">{{startObj.fTime}}</cover-view>
+          <cover-view class="adMidBox"></cover-view>
+          <cover-view class="adBDetailBox">{{endObj.fTime}}</cover-view>
+        </cover-view>
+
+        <cover-view class='inFnbox'>
+
+          <cover-view class='inFnLeft' bindtap='goUserList'>
+            <cover-view class='inFnIconBox'>
+              <cover-image src='/assets/img/sycks.png' mode='widthFix'></cover-image>
+            </cover-view>
+            <cover-view style='line-height: 60rpx;'>{{deate}}/{{deime}}</cover-view>
+          </cover-view>
+
+          <cover-view class='inFnMidBox'></cover-view>
+
+          <cover-view class='inFnRight' bindtap='goPageVerifi'>
+            <cover-view class='inFnIconBox'>
+              <cover-image src='/assets/img/sysrcph.png' mode='widthFix'></cover-image>
+            </cover-view>
+            <cover-view style='line-height: 60rpx;padding-left:40rpx;'> 乘车码</cover-view>
+          </cover-view>
+
+        </cover-view>
+      </cover-view>
+
+
+
+      <cover-view class='saoMaBox' bindtap='goSaoMa'>
+        <cover-image src='/assets/img/saoMaIcon.png' mode='widthFix'></cover-image>
+      </cover-view>
+
+    </cover-view>
+
+    <cover-view class='grzxBoxA' bindtap='goPagePersonal'>
+      <cover-view class='grzxIconBox'>
+        <cover-image src="/assets/img/Icongrzx.png" mode='widthFix'></cover-image>
+      </cover-view>
+      <cover-view style='line-height: 60rpx;padding-left:56rpx;'>个人中心</cover-view>
+    </cover-view>
+
+
+    <cover-view wx:if="{{!isDepart}}" class='inBtnPosi inBtnBottom btnColorBlue' bindtap='fcomif'>确认发车</cover-view>
+    <cover-view wx:else="{{isDepart}}" class='inBtnPosi inBtnBottom btnColorGray' bindtap='fFinish'>达到终点站</cover-view>
+
+  </map>
+</view>

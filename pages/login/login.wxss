@@ -1,0 +1,78 @@
+.lo-verifTitleBox {
+  display: block;
+  width: 194rpx;
+  height: 98rpx;
+  margin: 0 auto 16rpx;
+}
+button{border: none;}
+.lo-verifTitleBox>image {
+  width: 100%;
+}
+
+.lo-verifTitleBoxB {
+  display: block;
+  width: 400rpx;
+  height: 36rpx;
+  margin: 0 auto 50rpx;
+}
+
+.lo-verifTitleBoxB>image {
+  width: 100%;
+}
+
+.loInputBox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  margin-left: 10%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #e4e4e4;
+  background: white;
+  margin-bottom: 60rpx;
+  padding-left: 58rpx;
+  position: relative;
+}
+
+.loIconSt {
+  width: 34rpx;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -18rpx;
+}
+
+.loInput {
+  height: 78rpx;
+  line-height: 78rpx;
+  border: none;
+  background-color: white;
+  font-size: 36rpx;
+}
+
+.footBtnSt {
+  width: 80%;
+  margin-left: 10%;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 46rpx;
+  text-align: center;
+  color: #1879ff;
+}
+
+.loginBtnC ,.loginBtnN{
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 40rpx;
+  color: white;
+}
+.loginBtnC{
+  background-color: #1879ff;
+}
+.loginBtnN{
+  background-color: #e4e4e4;
+}

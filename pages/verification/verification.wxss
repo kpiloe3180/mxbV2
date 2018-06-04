@@ -1,0 +1,39 @@
+.sj-verifTitleBox {
+  display: block;
+  width: 194rpx;
+  height: 98rpx;
+  margin: 0 auto 100rpx;
+}
+
+.sj-verifTitleBox>image {
+  width: 100%;
+}
+
+.verifiInput {
+  width: 80%;
+  margin-left: 10%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #e4e4e4;
+  background: white;
+  margin-bottom: 100rpx;
+}
+
+.f-saoMaBox {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 80rpx;
+  text-align: center;
+  right: 10%;
+  top: 0;
+  padding-top: 10rpx;
+  z-index: 19;
+}
+
+.f-saoMaBox>image {
+  width: 70%;
+}

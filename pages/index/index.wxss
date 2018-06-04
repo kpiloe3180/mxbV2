@@ -1,0 +1,285 @@
+.map_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.in-topBox {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-bottom: 60rpx;
+}
+
+.ftxcn {
+  text-align: center;
+}
+
+.inTopRow, .inTopBRow {
+  width: 88%;
+  margin-left: 6%;
+  display: table;
+}
+
+.inTopRow {
+  height: 70rpx;
+}
+
+.inTopBRow {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.inLeftBox, .inRightBox, .inBLeftBox, .inBRightBox {
+  display: table-cell;
+  vertical-align: middle;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  word-break: break-all;
+}
+
+.inLeftBox, .inRightBox {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.inBLeftBox, .inBRightBox {
+  background-color: #bebebe;
+  color: white;
+  font-size: 24rpx;
+}
+
+.inArrow {
+  display: block;
+  width: 128rpx;
+  margin-left: 26rpx;
+  margin-right: 26rpx;
+  position: relative;
+  font-size: 26rpx;
+  color: #888;
+  text-align: center;
+  padding-top: 20rpx;
+}
+
+.inFnbox {
+  width: 100%;
+  margin-top: 16rpx;
+  border-top: 2rpx solid #f2f2f2;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  position: relative;
+  display: flex;
+}
+
+.inFnLeft, .inFnRight {
+  flex: 3;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #666;
+  position: relative;
+}
+
+.inFnMidBox {
+  flex: 1;
+}
+
+.saoMaBox {
+  position: absolute;
+  width: 140rpx;
+  height: 140rpx;
+  left: 50%;
+  margin-left: -70rpx;
+  bottom: 0;
+}
+
+.saoMaBox>cover-image {
+  width: 100%;
+}
+
+.inFnIconBox {
+  position: absolute;
+  width: 34rpx;
+  text-align: center;
+  height: 34rpx;
+  line-height: 34rpx;
+  top: 50%;
+  margin-top: -17rpx;
+  left: 50%;
+  margin-left: -90rpx;
+}
+
+.inFnIconBox>cover-image {
+  width: 100%;
+}
+
+.inBtnBottom {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  color: white;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 40rpx;
+}
+
+.inBtnPosi {
+  position: fixed;
+  bottom: 60rpx;
+}
+
+.btnColorBlue {
+  background-color: #1879ff;
+}
+
+.btnColorGreen {
+  background-color: #03a5b7;
+}
+
+.btnColorGray {
+  background-color: #535353;
+}
+
+.grzxBoxA {
+  display: block;
+  position: fixed;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  width: 192rpx;
+  font-size: 28rpx;
+  color: #666;
+  background-color: white;
+  left: 24rpx;
+  top: 260rpx;
+  border:  2rpx solid #f2f2f2;
+}
+
+.grzxIconBox {
+  position: absolute;
+  height: 36rpx;
+  line-height: 36rpx;
+  width: 36rpx;
+  text-align: center;
+  top: 50%;
+  margin-top: -18rpx;
+  left: 8rpx;
+}
+
+.grzxIconBox>cover-image {
+  width: 100%;
+}
+
+.adTopRow, .adBTopRow {
+  display: flex;
+  align-items: center;
+  width: 88%;
+  margin-left: 6%;
+}
+
+.adTopRow {
+  margin-bottom: 8rpx;
+}
+
+.adDetailBox, .adBDetailBox {
+  flex: 1.2;
+  text-align: center;
+  flex-wrap: warp;
+  white-space: pre-wrap;
+}
+
+.adDetailBox {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.adBDetailBox {
+  background-color: #bebebe;
+  color: white;
+  font-size: 24rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.adMidBox {
+  flex: 1;
+  text-align: center;
+  color: #888;
+  font-size: 26rpx;
+  position: relative;
+}
+
+.inArrowIcon {
+  width: 66%;
+  margin-left: 17%;
+  height: 36rpx;
+}
+
+.inArrowIcon>image {
+  width: 100%;
+}
+
+.flex-style {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-item {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.flex-item.active {
+  color: #0091ff;
+}
+
+.map_box {
+  position: absolute;
+  top: 35px;
+  bottom: 90px;
+  left: 0px;
+  right: 0px;
+}
+
+#navi_map {
+  width: 100%;
+  height: 100%;
+}
+
+.text_box {
+  position: absolute;
+  height: 90px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.text_box .text {
+  margin: 15px;
+}
+
+.detail_button {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  padding: 3px 5px;
+  color: #fff;
+  background: #0091ff;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+}

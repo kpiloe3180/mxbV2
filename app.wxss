@@ -1,0 +1,84 @@
+.f-body {
+  width: 100%;
+  position: relative;
+}
+
+.f-row {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.f-rown {
+  display: block;
+  width: 92%;
+  margin-left: 4%;
+  position: relative;
+}
+
+:-moz-placeholder {
+  color: #d5d5d5;
+}
+
+::-moz-placeholder {
+  color: #d5d5d5;
+}
+
+input:-ms-input-placeholder {
+  color: #d5d5d5;
+}
+
+input::-webkit-input-placeholder {
+  color: #d5d5d5;
+}
+
+.f-rowm {
+  display: block;
+  width: 96%;
+  margin-left: 4%;
+  position: relative;
+}
+
+.f-patb {
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+}
+
+.f-wh {
+  background-color: white;
+}
+
+.borB {
+  border-bottom: 2rpx solid #f2f2f2;
+}
+
+.borR {
+  border-right: 2rpx solid #f2f2f2;
+}
+
+.btnBottom {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  color: white;
+  background-color: #1879ff;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 40rpx;
+}
+
+.boxShadow {
+  -webkit-box-shadow: 0 4rpx 10rpx 0 #e7e7e7;
+  -moz-box-shadow: 0 4rpx 10rpx 0 #e7e7e7;
+  box-shadow: 0 4rpx 10rpx 0 #e7e7e7;
+}
+
+.dataNullBox{
+    display: block;
+    width: 100%;
+    padding-top: 160rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #666;
+}
+.dataNullBox>image{width: 100%;}

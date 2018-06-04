@@ -1,0 +1,26 @@
+<view class="f-body">
+  <view class="f-row f-wh" style="padding-top: 8rpx">
+    <view class="f-row">
+      <image src="/assets/img/topBgA.png" mode="widthFix" style='width:100%;'></image>
+      <view class="userImgBoxA">
+        <view class='touXStA'>
+          <image src="/assets/img/touXA.png"></image>
+        </view>
+        {{userName}}
+      </view>
+
+      <view class='f-XCBtn' bindtap='goLogin'>注销</view>
+    </view>
+
+    <view class="f-rown f-patb teInXa borB" bindtap='goSheet'>
+      <image src="/assets/img/myPBB.png" alt=""></image>
+      我的排班表
+    </view>
+
+    <view class="f-rown f-patb teInXa" bindtap='callPhoneA'>
+      <image src="/assets/img/IconKeFu.png" alt=""></image>
+      客服电话：(027)-8228 9990
+    </view>
+
+  </view>
+</view>

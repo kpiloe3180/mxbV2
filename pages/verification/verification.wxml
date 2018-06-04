@@ -1,0 +1,13 @@
+<form class="f-body" style='padding-top: 80rpx' bindsubmit='goVerification'>
+  <view class='sj-verifTitleBox'>
+    <image src='/assets/img/hxcg.png' mode='widthFix'></image>
+  </view>
+  <view class='f-row'>
+    <input placeholder='请输入乘车码' type="number" maxlength="12" name="verifiData" placeholder-style="color: #d5d5d5;" class='verifiInput' value='{{fQRData}}'></input>
+    <view class='f-saoMaBox' bindtap='verSaoMa'>
+      <image src='/assets/img/saoMaB.png' mode='widthFix'></image>
+    </view>
+  </view>
+
+  <button class='btnBottom' form-type="submit">核销</button>
+</form>

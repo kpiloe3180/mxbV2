@@ -1,0 +1,163 @@
+page {
+  background-color: #f2f2f2;
+}
+
+.f-topFixBox {
+  display: block;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  padding-bottom: 20rpx;
+  background-color: #f2f2f2;
+}
+
+.f-topNav {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #f2f2f2;
+  position: relative;
+}
+
+.f-topLeftNav, .f-topRightNav {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 28%;
+  text-align: center;
+  height: 100%;
+}
+
+.f-topLeftNav {
+  float: left;
+  margin-left: 14%;
+}
+
+.f-topRightNav {
+  float: right;
+  margin-right: 14%;
+}
+
+.topNotDone {
+  color: #666;
+  border: none;
+}
+
+.topIsDone {
+  color: #1a7afe;
+  border-bottom: 2rpx solid #1a7afe;
+}
+
+.sheetDetailBox {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 94%;
+  margin-left: 3%;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  background-color: white;
+  position: relative;
+  -webkit-box-shadow: 0 2px 6px 0 #e7e7e7;
+  -moz-box-shadow: 0 2px 6px 0 #e7e7e7;
+  box-shadow: 0 2px 6px 0 #e7e7e7;
+  padding-bottom: 20rpx;
+  padding-top: 10rpx;
+}
+
+.sheetTopRow {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  color: #666;
+  margin-left: 3%;
+  margin-bottom: 16rpx;
+}
+
+.sheetRightBox {
+  position: absolute;
+  width: 90rpx;
+  text-align: center;
+  right: 3%;
+  top: 50%;
+  margin-top: -53rpx;
+  z-index: 8;
+}
+
+.sheetRightIcon {
+  width: 48rpx;
+  margin-bottom: -10rpx;
+}
+
+.sheetRightBox>text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #888;
+}
+
+.sheetAddressBox {
+  width: 78%;
+  margin-left: 3%;
+  position: relative;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.shStartStation, .shEndStation {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48rpx;
+  line-height: 48rpx;
+  padding-left: 24rpx;
+  position: relative;
+}
+
+.bluePoint, .redPoint {
+  display: block;
+  position: absolute;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  left: 0;
+  top: 50%;
+  margin-top: -5rpx;
+}
+
+.redPoint {
+  background-color: #e45851;
+}
+
+.bluePoint {
+  background-color: #1789ff;
+}
+
+.shBtnBox {
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.shBtnBox>button {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 40rpx;
+  color: white;
+  background-color: #1879ff;
+}

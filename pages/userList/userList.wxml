@@ -1,0 +1,61 @@
+<scroll-view scroll-y="true">
+  <view class="f-rowm" style='padding-bottom:154rpx;'>
+
+    <view class="userInfoBox" wx:for="{{noCheckList}}" data-phoneNo='{{item.mobile}}'>
+      <view class='userIconBox'>
+        <image src='/assets/img/touXA.png' mode='widthFix' class='userIcon'></image>
+      </view>
+      <view class='userDetailRow'>
+        <view class='userDetailName'>{{item.nick_name||'无名氏'}}</view>
+        <view class='userDetailSt uColRed'>未上车</view>
+      </view>
+      <view class="userHXTimeBox"></view>
+    </view>
+
+    <view class="userInfoBox" wx:for="{{isCheckList}}" data-phoneNo='{{item.mobile}}'>
+      <view class='userIconBox'>
+        <image src='/assets/img/touXA.png' mode='widthFix' class='userIcon'></image>
+      </view>
+      <view class='userDetailRow'>
+        <view class='userDetailName'>{{item.nick_name||'无名氏'}}</view>
+        <view class='userDetailSt uColGray'>已上车</view>
+      </view>
+      <view class="userHXTimeBox">
+        <text>{{item.write_off_time}}核销</text>
+      </view>
+    </view>
+
+    <!-- <view class="userInfoBox">
+      <view class='userIconBox'>
+        <image src='/assets/img/touXA.png' mode='widthFix' class='userIcon'></image>
+      </view>
+      <view class='userDetailRow'>
+        <view class='userDetailName'>李昂费斯克里顿</view>
+        <view class='userDetailSt {{isGoCar?"uColRed":"uColGray"}}'>未上车</view>
+      </view>
+      <view class="userHXTimeBox">
+        <text>2018-05-15</text>
+        <text style='margin-left:18rpx;'>12:55核销</text>
+      </view>
+    </view> -->
+
+  </view>
+</scroll-view>
+<view class="dataNullBox" wx:if='{{isDataNull}}'>
+  <image src='/assets/img/dataNull.png' mode='widthFix'></image>
+  暂无乘客信息 
+</view>
+<view class='usBotBox' wx:if='{{hasNoCheck}}'>
+  <view class='usAlertRow'>
+    <image src='/assets/img/GTHIcon.png' mode='widthFix' class='usALertIcon'></image>
+    可短信提醒未上车的乘客即将发车
+  </view>
+  <button class='usBtnBox' bindtap='sendmsg' wx:if="{{!isSend}}">
+    <image src='/assets/img/msgIcon.png' mode='widthFix' class='usBtnIcon'></image>
+    一键短信提醒
+  </button>
+    <button class='usBtnBoxB' bindtap='conSendmsg' wx:if="{{isSend}}">
+    <image src='/assets/img/msgIcon.png' mode='widthFix' class='usBtnIcon'></image>
+    {{isSendSce}}秒后可重复发送
+  </button>
+</view>
